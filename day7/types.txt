@@ -1,0 +1,7 @@
+AAAAA 1 5-of-a-kind
+AA8AA 2 4-of-a-kind
+23332 3 full-house
+TTT98 4 3-of-a-kind
+23432 5 2-pair
+A23A4 6 1-pair
+23456 7 high-card
