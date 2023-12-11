@@ -60,6 +60,14 @@ EOF
   then
     echo "All 'Z$' verticies visited @:"
     echo "${z_vertex_visits[@]}"
+
+    lcm=1
+    for n in "${z_vertex_visits[@]}"
+    do
+      lcm=$(duckdb $db_file -readonly -csv -noheader "select lcm($lcm, $n)")
+    done
+    echo "LCM of 'Z$' visits: $lcm"
+
     break
   fi
 done
